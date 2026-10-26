@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untukmu, Tercinta ♥</title>
+  <meta name="description" content="Sebuah kecil hadiah digital — halaman romantis untuk orang tersayang." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- kelopak melayang -->
+  <div class="petals" aria-hidden="true">
+    <span>🌸</span><span>💗</span><span>💮</span><span>🌷</span><span>💕</span>
+    <span>🌸</span><span>🩷</span><span>🌺</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">untukmu<span>♥</span></a>
+      <nav class="nav" aria-label="Navigasi">
+        <a href="#counter">Hari Kita</a>
+        <a href="#timeline">Kenangan</a>
+        <a href="#reasons">Alasan</a>
+        <a href="#letter">Surat</a>
+        <a href="#notes">Catatan</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="kicker">♥ hadiah kecil untukmu ♥</p>
+        <h1>Untukmu, <span class="script">Tercinta</span>…</h1>
+        <p class="lede">Di antara jutaan orang di dunia, hatiku memilihmu. Halaman kecil ini adalah cara sederhana untuk mengatakan sesuatu yang sering lupa aku ucapkan: <em>terima kasih sudah ada.</em></p>
+        <div class="hero-actions">
+          <a href="#letter" class="btn btn-primary">Buka suratku</a>
+          <a href="#counter" class="btn btn-ghost">Lihat perjalanan kita</a>
+        </div>
+        <div class="heart-line" aria-hidden="true">💗 · 💗 · 💗</div>
+      </div>
+    </section>
+
+    <!-- LOVE COUNTER -->
+    <section class="section section-pink" id="counter">
+      <div class="container center">
+        <p class="kicker">01 — Hitungan cinta</p>
+        <h2 class="section-title">Sudah sejauh ini kita melangkah</h2>
+        <div class="counter-grid">
+          <div class="counter-box"><strong id="days">—</strong><span>hari bersama</span></div>
+          <div class="counter-box"><strong id="hours">—</strong><span>jam</span></div>
+          <div class="counter-box"><strong id="minutes">—</strong><span>menit</span></div>
+          <div class="counter-box"><strong id="seconds">—</strong><span>detik</span></div>
+        </div>
+        <p class="muted">…dan setiap detiknya selalu jadi favoritku.</p>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <p class="kicker">02 — Perjalanan kita</p>
+        <h2 class="section-title">Kenangan yang tak ingin kulupakan</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="dot">①</span>
+            <div class="timeline-body">
+              <p class="date">Hari pertama</p>
+              <h3>Pertemuan yang tak direncanakan</h3>
+              <p>Obrolan sederhana yang tanpa sadar jadi awal dari segalanya. Hari itu aku tidak tahu, hatiku sedang mencatat sesuatu yang akan selalu ia ingat.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="dot">②</span>
+            <div class="timeline-body">
+              <p class="date">Momen pertama kita</p>
+              <h3>Tawa pertama yang sama</h3>
+              <p>Kita tertawa tentang hal yang sepele sampai perut sakit. Aku menyimpan tawa itu rapi-rapi — jadi obat saat hariku kelabu.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="dot">③</span>
+            <div class="timeline-body">
+              <p class="date">Saat sulit</p>
+              <h3>Kamu tetap tinggal</h3>
+              <p>Bukan hanya di hari bahagia — tapi juga saat semuanya berantakan. Kamu membuktikan bahwa cinta yang nyata tidak lari saat rumit.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="dot">④</span>
+            <div class="timeline-body">
+              <p class="date">Hari ini</p>
+              <h3>Masih memilihmu, lagi dan lagi</h3>
+              <p>Dan besok, lusa, serta semua hari setelahnya — aku akan memilihmu lagi, tanpa ragu.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- REASONS -->
+    <section class="section section-pink" id="reasons">
+      <div class="container center">
+        <p class="kicker">03 — Kenapa kamu</p>
+        <h2 class="section-title">Alasan aku mencintaimu</h2>
+        <p class="muted">Setiap klik mengeluarkan satu alasan. Ada banyak — teruslah menekan.</p>
+        <div class="reason-card">
+          <span class="reason-number" id="reason-number">#1</span>
+          <p class="reason-text" id="reason-text">Tekan tombol di bawah untuk memulai…</p>
+          <button class="btn btn-primary" id="reason-btn">Sebutkan alasan ♥</button>
+        </div>
+        <p class="muted small">Alasan terakhir: <strong id="reason-count">0</strong> dari <strong id="reason-total">0</strong> — dan alasan sesungguhnya tak bisa dihitung.</p>
+      </div>
+    </section>
+
+    <!-- LOVE LETTER -->
+    <section class="section" id="letter">
+      <div class="container narrow center">
+        <p class="kicker">04 — Surat cinta</p>
+        <h2 class="section-title">Ada surat untukmu</h2>
+        <p class="muted">Klik amplopnya untuk membaca.</p>
+
+        <button class="envelope" id="envelope" aria-label="Buka surat cinta">
+          <span class="envelope-body"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart">♥</span>
+        </button>
+
+        <article class="letter" id="letter-card" hidden>
+          <h3 class="script">Sayangku,</h3>
+          <p>Aku bukan orang yang pandai merangkai kata. Tapi untukmu, aku selalu ingin mencoba lagi dan lagi.</p>
+          <p>Terima kasih untuk hal-hal kecil yang biasanya orang lain lewatkan: pesan pagimu, sabarmu saat aku lelah, dan caramu membuat hari biasa terasa istimewa.</p>
+          <p>Kalau nanti kita tua dan semua hal memudar, aku janji masih akan mencari tanganmu — persis seperti pertama kali.</p>
+          <p class="sign">Selalu milikmu,<br /><span class="script">— A</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- NOTES / GALLERY -->
+    <section class="section section-pink" id="notes">
+      <div class="container">
+        <p class="kicker">05 — Catatan manis</p>
+        <h2 class="section-title">Sekedar untukmu hari ini</h2>
+        <div class="notes-grid">
+          <article class="note"><span>🌷</span><p>Semoga harimu seindah senyummu di pagi hari.</p></article>
+          <article class="note"><span>☕</span><p>Kopi boleh dingin, tapi perhatianku padamu tidak.</p></article>
+          <article class="note"><span>🌙</span><p>Selamat tidur — aku titipkan mimpi indah untukmu.</p></article>
+          <article class="note"><span>🎧</span><p>Semua lagu tentang cinta rasanya tentang kita.</p></article>
+          <article class="note"><span>🍓</span><p>Kamu manisnya melebihi semua yang pernah kucicipi.</p></article>
+          <article class="note"><span>🏡</span><p>Bukan tempat — rumah itu, rasanya, ada di dirimu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMISE -->
+    <section class="section promise">
+      <div class="container narrow center">
+        <p class="kicker light">06 — Janjiku</p>
+        <h2 class="section-title">Tiga janji kecil</h2>
+        <ul class="promise-list">
+          <li><strong>Mendengarkan</strong> — bahkan saat kamu hanya butuh bahu untuk bersandar.</li>
+          <li><strong>Memilihmu</strong> — di hari mudah, di hari berat, dan di hari-hari biasa.</li>
+          <li><strong>Tumbuh bersamamu</strong> — menjadi versi terbaik, berdua.</li>
+        </ul>
+        <p class="closing script">Aku mencintaimu, hari ini dan seterusnya ♥</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Dibuat dengan ♥ khusus untukmu</span>
+      <a href="#top">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
