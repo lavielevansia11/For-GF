@@ -1,8 +1,12 @@
 /* ============================================================
    KONFIGURASI — ubah dua baris ini sesuai kalian berdua
    ============================================================ */
-const START_DATE = new Date("2026-10-11T00:00:00"); // kapan kalian mulai bersama
-const DAY_ONE_LABEL = "17 September 2026";                // tanggal itu, dalam teks cantik
+const START_DATE = new Date("2026-10-11T00:00:00"); // hari kita resmi jadian
+const JADIAN_LABEL = "11 Oktober 2026";               // tanggal jadian, dalam teks cantik
+const DAY_ONE_LABEL = "17 September 2026";            // hari pertama ketemu & jatuh cinta
+
+document.getElementById("jadian-label").textContent =
+  `Sejak kita resmi jadian — ${JADIAN_LABEL}`;
 
 /* ---------- Hitungan hari cinta (berjalan tiap detik) ---------- */
 const els = {
@@ -110,4 +114,4 @@ nav.addEventListener("click", (e) => {
 });
 
 /* ---------- Catatan hari pertama (opsional, ditampilkan sekali) ---------- */
-console.log(`Halaman ini dimulai dari ${DAY_ONE_LABEL} ♥`);
+console.log(`Pertama ketemu ${DAY_ONE_LABEL}, jadian ${JADIAN_LABEL} ♥`);
