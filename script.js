@@ -1,8 +1,8 @@
 /* ============================================================
    KONFIGURASI — ubah dua baris ini sesuai kalian berdua
    ============================================================ */
-const START_DATE = new Date("2024-06-15T00:00:00"); // kapan kalian mulai bersama
-const DAY_ONE_LABEL = "15 Juni 2024";                // tanggal itu, dalam teks cantik
+const START_DATE = new Date("2026-10-11T00:00:00"); // kapan kalian mulai bersama
+const DAY_ONE_LABEL = "17 September 2026";                // tanggal itu, dalam teks cantik
 
 /* ---------- Hitungan hari cinta (berjalan tiap detik) ---------- */
 const els = {
